@@ -22,7 +22,9 @@ arguments=("$@")
 last_index=`expr $# - 1` 
 
 echo "Количество параметров: " $#
-echo "Последний параметр:    " ${arguments[$last_index]}
-
+if [ $last_index -gt  -1 ]
+then
+  echo "Последний параметр:    " ${arguments[$last_index]}
+fi
 
 exit 0

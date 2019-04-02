@@ -18,6 +18,16 @@ do
         ((i++))
 done
 
+if [ $# -ne 1 ]; then
+  echo "Неверное количество аргументов (необходимо: 1)"
+  exit 1
+fi
+
+if ! [ -f "$1" ]; then
+  echo "Указанный файл не найден"
+  exit 2
+fi
+
 text=$(cat $1)
 open_braces=0;
 pairs=0;

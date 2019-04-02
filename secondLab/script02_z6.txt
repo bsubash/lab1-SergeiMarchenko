@@ -1,0 +1,60 @@
+#include "stdafx.h"
+#include <iostream>
+#include <stdio.h>
+ 
+ 
+ 
+float sum();
+float razn();
+float del();
+float proizv();
+ 
+using namespace std;
+int main()
+{   
+    
+    int x;
+ 
+    float s=sum();
+    
+ 
+    getch();
+    
+    
+}
+float sum()
+{   float rez,a,b;
+ 
+    cout <<"BBedute 2 4ucJIa\n";
+    cin >>a,b;
+    rez=a+b;
+    return rez;
+}
+ 
+float razn()
+{   float rz,a,b;
+ 
+    cout <<"BBedute 2 4ucJIa\n";
+    cin >>a,b;
+    rz=a-b;
+    return rz;
+}
+float del()
+{   float rz,a,b;
+ 
+    cout <<"BBedute 2 4ucJIa\n";
+    сin >>a,b;
+    rz=a/b;
+    return rz;
+ 
+}
+ 
+float proizv()
+{   float rz,a,b;
+ 
+    cout <<"BBedute 2 4ucJIa\n";
+    cin >>a,b;;
+    rz=a*b;
+    return rz;
+ 
+}

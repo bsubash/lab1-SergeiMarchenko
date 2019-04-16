@@ -12,5 +12,6 @@ do
   fi
   ((i++))
 done
-wget --mirror -p --convert-links -P ./papka https://www.onliner.by/ 
+wget --mirror -rm -P ./papka  https://www.onliner.by/
+tar -cvzf arxiv.tar.gz ./papka
 
